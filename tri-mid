@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int n;
+cout<<"請輸入你要的高度:";
+cin>>n;
+for(int a=1;a <= n;a++){
+	for(int b = 0;b < n-a;b++)//設空格 
+	cout << " ";	
+	for(int b =0;b < a*2-1;b++)//設填充物 
+	cout << "*";
+	cout<<endl;
+}
+return 0;
+}
